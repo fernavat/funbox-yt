@@ -36,7 +36,7 @@ Meteor.methods({
 
     var opts = {
       maxResults: 5,
-      key: 'AIzaSyDP6ue8Qf6grrfJvIX7TqwFGQ1BIKHDZ3g'
+       key: Meteor.settings.private.ytKey
     };
 
     const searchSync = Meteor.wrapAsync(search)

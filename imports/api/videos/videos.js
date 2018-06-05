@@ -7,7 +7,7 @@ import { TAPi18n } from 'meteor/tap:i18n';
 class VideosCollection extends Mongo.Collection {
   insert(doc, callback) {
     const ourDoc = doc;
-    ourDoc.createdAt = ourDoc.createdAt || new Date();
+    ourDoc.createdAt = ourDoc.createdAt || new Date()
     ourDoc.song = ourDoc.song || ""
     ourDoc.artist = ourDoc.artist || ""
     try {
