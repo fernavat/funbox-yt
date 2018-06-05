@@ -1,0 +1,15 @@
+meteor add alanning:roles
+
+meteor add webtempest:animate
+
+meteor npm install --save file-system
+meteor npm install --save sweetalert2
+meteor npm install youtube-node
+meteor npm install --save youtube-search
+meteor npm install --save jsdom jquery curl
+meteor npm install --save youtube-info
+
+// Import
+import swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+
