@@ -13,3 +13,5 @@ meteor npm install --save youtube-info
 import swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
+meteor update --release 1.6.1.2
+meteor create test --release x.y.z
