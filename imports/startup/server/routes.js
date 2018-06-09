@@ -2,7 +2,9 @@ Picker.route('/video/:id', function( params, req, res, next ) {
   //var file = this.params.full_path;
   //var file = "D:\\youtube-test\\Luis Fonsi, Demi Lovato - Échame La Culpa.mp4"
 
-  var file = "E:\youtube-test\\" + params.id + ".mp4"
+  //var file = "E:\youtube-test\\" + params.id + ".mp4"
+
+  var file = "/home/fernavat/Videos/youtube-test/" + params.id + ".mp4"
 
   var fs = Npm.require('fs');
 
