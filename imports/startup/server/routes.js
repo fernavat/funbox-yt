@@ -4,7 +4,14 @@ Picker.route('/video/:id', function( params, req, res, next ) {
 
   //var file = "E:\youtube-test\\" + params.id + ".mp4"
 
-  var file = "/home/fernavat/Videos/youtube-test/" + params.id + ".mp4"
+  const platform = process.platform
+  
+  if (platform === 'freebsd' || platform === 'linux') {
+    var file = "/home/fernavat/Videos/youtube-test/" + params.id + ".mp4"
+  } else if (platform === 'win32') {
+    var file = "E:\youtube-test\\" + params.id + ".mp4"
+  }
+ 
 
   var fs = Npm.require('fs');
 

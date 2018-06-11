@@ -6,6 +6,7 @@ import { Videos } from '../api/videos/videos.js'
 import {
   insert,
 } from '../api/history/methods.js';
+import { log } from 'util';
 
 export const toHistory = () => {
   const video = Session.get('videoPlaying')
