@@ -56,6 +56,8 @@ Template.Playlists_show.onCreated(function listShowOnCreated() {
       "videos.$.lastPlayedAt": { type: Date },
       "videos.$.playedCount": { type: Number },
       "videos.$.downloaded": { type: Boolean },
+      "videos.$.song": { type: String },
+      "videos.$.artist": { type: String },
       //videos: { type: Mongo.Cursor },
     }).validate(Template.currentData());
   });
